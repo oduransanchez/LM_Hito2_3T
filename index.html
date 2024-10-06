@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Encuesta</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Resultados de la Encuesta</h1>
+        <div id="filtros">
+            <h2>Filtros</h2>
+            <form id="form-filtros">
+                <div class="form-group">
+                    <label for="filtro-edad">Edad</label>
+                    <select id="filtro-edad" class="form-control">
+                        <option value="">Todas</option>
+                        <option value="Menor de 18 años">Menor de 18 años</option>
+                        <option value="18-24 años">18-24 años</option>
+                        <option value="25-34 años">25-34 años</option>
+                        <option value="35-44 años">35-44 años</option>
+                        <option value="45-54 años">45-54 años</option>
+                        <option value="55 años o más">55 años o más</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-dispositivo">Dispositivo</label>
+                    <select id="filtro-dispositivo" class="form-control">
+                        <option value="">Todos</option>
+                        <option value="Computadora de escritorio">Computadora de escritorio</option>
+                        <option value="Portátil">Portátil</option>
+                        <option value="Smartphone">Smartphone</option>
+                        <option value="Tablet">Tablet</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-plataforma">Plataforma</label>
+                    <select id="filtro-plataforma" class="form-control">
+                        <option value="">Todas</option>
+                        <option value="Netflix">Netflix</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Spotify">Spotify</option>
+                        <option value="Redes Sociales">Redes Sociales</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-horas">Horas al día</label>
+                    <select id="filtro-horas" class="form-control">
+                        <option value="">Todas</option>
+                        <option value="Menos de 1 hora">Menos de 1 hora</option>
+                        <option value="1-2 horas">1-2 horas</option>
+                        <option value="3-4 horas">3-4 horas</option>
+                        <option value="5-6 horas">5-6 horas</option>
+                        <option value="Más de 6 horas">Más de 6 horas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-contenido">Tipo de contenido</label>
+                    <select id="filtro-contenido" class="form-control">
+                        <option value="">Todos</option>
+                        <option value="Videos educativos">Videos educativos</option>
+                        <option value="Series y películas">Series y películas</option>
+                        <option value="Música">Música</option>
+                        <option value="Noticias">Noticias</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-preferencia">Preferencia</label>
+                    <select id="filtro-preferencia" class="form-control">
+                        <option value="">Todas</option>
+                        <option value="Individualmente">Individualmente</option>
+                        <option value="En compañía">En compañía</option>
+                        <option value="Depende del tipo de contenido">Depende del tipo de contenido</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-factor">Factor importante</label>
+                    <select id="filtro-factor" class="form-control">
+                        <option value="">Todos</option>
+                        <option value="Calidad">Calidad</option>
+                        <option value="Relevancia">Relevancia</option>
+                        <option value="Diversidad">Diversidad</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filtro-genero">Género</label>
+                    <select id="filtro-genero" class="form-control">
+                        <option value="">Todos</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="No binario">No binario</option>
+                        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+            </form>
+        </div>
+        <div id="resultados" class="mt-4">
+            <h2>Resultados</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Edad</th>
+                        <th>Dispositivo</th>
+                        <th>Plataforma</th>
+                        <th>Horas al día</th>
+                        <th>Tipo de contenido</th>
+                        <th>Preferencia</th>
+                        <th>Factor importante</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-resultados">
+                    <!-- Filas generadas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
